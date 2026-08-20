@@ -1,33 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Space+Grotesk:wght@500;600;700&display=swap");
+
 :root {
-  --bg: #f5f3ee;
-  --bg-soft: #ebe7dd;
-  --surface: #ffffff;
-  --surface-raised: #fbfaf6;
-  --surface-strong: #101413;
-  --text: #4f5652;
-  --text-muted: #747e78;
-  --heading: #101413;
-  --line: #ddd8cd;
-  --line-strong: #c9c1b3;
-  --accent: #0f766e;
-  --accent-strong: #084d49;
-  --accent-soft: #d8efea;
-  --warm: #b1643d;
-  --warm-soft: #f0dfd3;
-  --blue: #476f8f;
-  --coral: #b75d55;
-  --radius: 8px;
-  --shadow: 0 24px 70px rgba(36, 32, 25, 0.12);
-  --content: 1160px;
-  --font-sans:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+  --paper: #f1eee6;
+  --ink: #10131a;
+  --amber: #e3a24a;
+  --slate: #5c7290;
+  --warm-gray: #8b8a82;
+
+  --bg: var(--paper);
+  --surface: color-mix(in srgb, var(--paper) 86%, #ffffff);
+  --heading: var(--ink);
+  --text: color-mix(in srgb, var(--ink) 76%, var(--warm-gray));
+  --muted: color-mix(in srgb, var(--ink) 42%, var(--warm-gray));
+  --line: color-mix(in srgb, var(--ink) 17%, transparent);
+  --line-strong: color-mix(in srgb, var(--ink) 31%, transparent);
+  --interactive: var(--amber);
+  --interactive-hover: color-mix(in srgb, var(--amber) 76%, var(--ink));
+  --structure: var(--slate);
+  --diagram-line: color-mix(in srgb, var(--slate) 45%, transparent);
+  --radius: 2px;
+  --content: 1120px;
+
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Newsreader", Georgia, serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
 
   color: var(--text);
   background: var(--bg);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.58;
   letter-spacing: 0;
   color-scheme: light;
   font-synthesis: none;
@@ -37,24 +39,15 @@
 }
 
 :root[data-theme="dark"] {
-  --bg: #090c0b;
-  --bg-soft: #101615;
-  --surface: #111716;
-  --surface-raised: #151d1b;
-  --surface-strong: #f4f0e7;
-  --text: #b9c4bf;
-  --text-muted: #83908b;
-  --heading: #f7f2e8;
-  --line: #26322f;
-  --line-strong: #3a4743;
-  --accent: #51bdb2;
-  --accent-strong: #90e5dc;
-  --accent-soft: #123532;
-  --warm: #d78a62;
-  --warm-soft: #3a241c;
-  --blue: #85a8ca;
-  --coral: #e0857d;
-  --shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
+  --bg: var(--ink);
+  --surface: color-mix(in srgb, var(--ink) 91%, var(--paper));
+  --heading: var(--paper);
+  --text: color-mix(in srgb, var(--paper) 78%, var(--warm-gray));
+  --muted: color-mix(in srgb, var(--paper) 48%, var(--warm-gray));
+  --line: color-mix(in srgb, var(--paper) 18%, transparent);
+  --line-strong: color-mix(in srgb, var(--paper) 30%, transparent);
+  --interactive-hover: color-mix(in srgb, var(--amber) 82%, var(--paper));
+  --diagram-line: color-mix(in srgb, var(--slate) 62%, transparent);
   color-scheme: dark;
 }
 
@@ -64,28 +57,14 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 92px;
+  scroll-padding-top: 86px;
 }
 
 body {
   min-width: 320px;
   min-height: 100svh;
   margin: 0;
-  background:
-    radial-gradient(circle at 14% 6%, rgba(15, 118, 110, 0.12), transparent 28rem),
-    radial-gradient(circle at 86% 18%, rgba(177, 100, 61, 0.1), transparent 26rem),
-    linear-gradient(180deg, var(--bg), var(--bg-soft));
-}
-
-:root[data-theme="dark"] body {
-  background:
-    radial-gradient(circle at 12% 8%, rgba(81, 189, 178, 0.12), transparent 27rem),
-    radial-gradient(circle at 86% 20%, rgba(215, 138, 98, 0.1), transparent 25rem),
-    linear-gradient(180deg, #090c0b, #101615);
-}
-
-body.is-dialog-open {
-  overflow: hidden;
+  background: var(--bg);
 }
 
 button,
@@ -118,6 +97,6 @@ img {
 }
 
 ::selection {
-  color: #ffffff;
-  background: var(--accent);
+  color: var(--ink);
+  background: var(--interactive);
 }

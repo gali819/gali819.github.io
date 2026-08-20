@@ -298,6 +298,7 @@ export const projects: Project[] = [
     technologies: ['Catalog', 'Cart', 'Responsive design'],
     repository: 'private',
     prominence: 'standard',
+    liveUrl: 'https://guitarg.xyz',
     image: {
       src: '',
       fileName: 'guitarg.webp',

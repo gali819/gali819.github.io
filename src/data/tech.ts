@@ -1,4 +1,4 @@
-import type { Capability } from './types'
+import type { Capability, LocalizedString } from './types'
 
 export const capabilities: Capability[] = [
   {
@@ -63,4 +63,43 @@ export const techStack = [
   'Tailwind CSS',
   'Git',
   'GitHub',
+]
+
+export const stackGroups: {
+  id: string
+  title: LocalizedString
+  items: string[]
+}[] = [
+  {
+    id: 'backend',
+    title: {
+      en: 'Backend',
+      es: 'Backend',
+    },
+    items: ['PHP', 'Laravel', 'REST APIs', 'Authentication'],
+  },
+  {
+    id: 'frontend',
+    title: {
+      en: 'Frontend',
+      es: 'Frontend',
+    },
+    items: ['React', 'TypeScript', 'JavaScript', 'Inertia.js', 'Vite', 'Tailwind CSS'],
+  },
+  {
+    id: 'data',
+    title: {
+      en: 'Data',
+      es: 'Datos',
+    },
+    items: ['MySQL', 'Migrations', 'Relationships', 'Data modeling'],
+  },
+  {
+    id: 'tools',
+    title: {
+      en: 'Tools',
+      es: 'Herramientas',
+    },
+    items: ['Git', 'GitHub', 'Google OAuth'],
+  },
 ]

@@ -16,15 +16,15 @@ export const personalInfo = {
 export const contactLinks: ContactLink[] = [
   {
     id: 'email',
-    href: '',
+    href: 'mailto:nachogalilea@gmail.com',
   },
   {
     id: 'linkedin',
-    href: '',
+    href: 'https://www.linkedin.com/in/ignacio-galilea-b6a6a22b6/',
   },
   {
     id: 'github',
-    href: '',
+    href: 'https://github.com/gali819',
   },
 ]
 

@@ -34,6 +34,7 @@ export type Project = {
   technologies: string[]
   repository: 'private'
   prominence: 'featured' | 'standard'
+  liveUrl?: string
   image: {
     src: string
     fileName: string
