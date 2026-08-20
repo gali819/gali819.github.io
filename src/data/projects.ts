@@ -259,6 +259,7 @@ export const projects: Project[] = [
     technologies: [],
     repository: 'private',
     prominence: 'standard',
+    liveUrl: 'https://gali819.github.io/ojobache/',
     image: {
       src: '',
       fileName: 'ojobache.webp',
