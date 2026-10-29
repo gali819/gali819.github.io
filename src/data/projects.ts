@@ -2,108 +2,10 @@ import type { Project } from './types'
 
 export const projects: Project[] = [
   {
-    id: 'digital-invitations-platform',
-    title: {
-      en: 'Digital Invitations Platform',
-      es: 'Plataforma de Invitaciones Digitales',
-    },
-    category: {
-      en: 'Event Platform',
-      es: 'Plataforma de eventos',
-    },
-    summary: {
-      en: 'A web platform for creating and managing digital invitations for weddings, birthdays, quinceaneras, and other events.',
-      es: 'Plataforma web para crear y gestionar invitaciones digitales para bodas, fiestas de 15, cumpleaños y otros eventos.',
-    },
-    problem: {
-      en: 'The platform needs to support event-specific workflows, public invitation links, guests, RSVP, permissions, and administration without turning each event into a manual process.',
-      es: 'La plataforma necesita sostener flujos propios de eventos, links públicos, invitados, RSVP, permisos y administración sin convertir cada evento en un proceso manual.',
-    },
-    solution: {
-      en: 'I support and develop different areas of the system, improving event, invitation, guest, permission, RSVP, and administrative functionality across the product.',
-      es: 'Realizo soporte y desarrollo en distintas áreas del sistema, mejorando funcionalidades de eventos, invitaciones, invitados, permisos, RSVP y administración.',
-    },
-    role: {
-      en: 'Support and development across several parts of the platform.',
-      es: 'Soporte y desarrollo en distintas partes de la plataforma.',
-    },
-    features: {
-      en: [
-        'Users, events, invitations, and guests',
-        'Permissions and administrative workflows',
-        'RSVP and public invitation links',
-        'Feature work across different event use cases',
-      ],
-      es: [
-        'Usuarios, eventos, invitaciones e invitados',
-        'Permisos y flujos administrativos',
-        'RSVP y links públicos de invitación',
-        'Desarrollo de funcionalidades para distintos tipos de eventos',
-      ],
-    },
-    technologies: ['Laravel', 'PHP', 'MySQL', 'React', 'TypeScript', 'Inertia.js', 'Vite'],
-    repository: 'private',
-    prominence: 'featured',
-    image: {
-      src: '',
-      fileName: 'digital-invitations-platform.webp',
-      tone: 'coral',
-    },
-  },
-  {
-    id: 'arreglosya',
-    title: {
-      en: 'ArreglosYa',
-      es: 'ArreglosYa',
-    },
-    category: {
-      en: 'Service Marketplace',
-      es: 'Marketplace de servicios',
-    },
-    summary: {
-      en: 'A full-stack service marketplace that connects people who need home repairs with professionals.',
-      es: 'Marketplace full-stack de servicios que conecta personas con problemas del hogar con profesionales.',
-    },
-    problem: {
-      en: 'Customers need a reliable way to find service professionals for plumbing, locksmithing, electrical work, and home repairs.',
-      es: 'Los clientes necesitan una forma confiable de encontrar profesionales para plomería, cerrajería, electricidad y reparaciones del hogar.',
-    },
-    solution: {
-      en: 'The application organizes users, roles, account states, service categories, services, validation rules, and database relationships around a service marketplace flow.',
-      es: 'La aplicación organiza usuarios, roles, estados de cuenta, categorías, servicios, validaciones y relaciones de base de datos alrededor de un flujo de marketplace de servicios.',
-    },
-    role: {
-      en: 'Full-stack development and application architecture.',
-      es: 'Desarrollo full-stack y arquitectura de la aplicación.',
-    },
-    features: {
-      en: [
-        'Email/password authentication and Google OAuth',
-        'Password recovery, roles, authorization, and account states',
-        'Service categories, services, middleware, and validations',
-        'Migrations, seeders, relational design, and tests',
-      ],
-      es: [
-        'Autenticación email/password y Google OAuth',
-        'Recuperación de contraseña, roles, autorización y estados de cuenta',
-        'Categorías, servicios, middleware y validaciones',
-        'Migraciones, seeders, diseño relacional y tests',
-      ],
-    },
-    technologies: ['Laravel', 'PHP', 'MySQL', 'React', 'TypeScript', 'Inertia.js', 'Vite'],
-    repository: 'private',
-    prominence: 'featured',
-    image: {
-      src: '',
-      fileName: 'arreglosya.webp',
-      tone: 'teal',
-    },
-  },
-  {
     id: 'stock-management-system',
     title: {
-      en: 'Stock Management System',
-      es: 'Sistema de Gestión de Stock',
+      en: 'OrangeStock · Stock Management',
+      es: 'OrangeStock · Gestión de Stock',
     },
     category: {
       en: 'Business Management System',
@@ -142,6 +44,7 @@ export const projects: Project[] = [
     technologies: ['Laravel', 'PHP', 'MySQL', 'JavaScript'],
     repository: 'private',
     prominence: 'featured',
+    liveUrl: '/orangestock/',
     image: {
       src: '',
       fileName: 'stock-management-system.webp',

@@ -84,13 +84,17 @@ After adding a screenshot, update the matching project in `src/data/projects.ts`
 
 ```ts
 image: {
-  src: '/projects/arreglosya.webp',
-  fileName: 'arreglosya.webp',
-  tone: 'teal',
+  src: '/projects/stock-management-system.webp',
+  fileName: 'stock-management-system.webp',
+  tone: 'steel',
 }
 ```
 
-If `image.src` is empty, the portfolio shows a designed placeholder instead of a broken image.
+If `image.src` is empty, the portfolio looks for `image.fileName` in `public/projects/`. If the file is missing, it renders the project without a screenshot.
+
+## Public project demos
+
+See [the demo guide and AI prompts](docs/demos-publicas.md) for Stock Management, BlackPaddel, and Permutrueque.
 
 ## CV
 
