@@ -44,7 +44,7 @@ export const projects: Project[] = [
     technologies: ['Laravel', 'PHP', 'MySQL', 'JavaScript'],
     repository: 'private',
     prominence: 'featured',
-    liveUrl: '/orangestock/?v=6035861#/dashboard',
+    liveUrl: 'https://gali819.github.io/orangestock',
     image: {
       src: '/projects/stock-management-system.webp?v=bfc1c85c',
       fileName: 'stock-management-system.webp',
