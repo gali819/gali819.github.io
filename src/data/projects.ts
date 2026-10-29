@@ -94,8 +94,8 @@ export const projects: Project[] = [
   {
     id: 'permutrueque',
     title: {
-      en: 'Permutrueque',
-      es: 'Permutrueque',
+      en: 'PermuTrueque',
+      es: 'PermuTrueque',
     },
     category: {
       en: 'Marketplace',
@@ -124,9 +124,10 @@ export const projects: Project[] = [
     technologies: ['Laravel', 'PHP', 'MySQL', 'JavaScript'],
     repository: 'private',
     prominence: 'standard',
+    liveUrl: 'https://gali819.github.io/permutrueque/',
     image: {
       src: '',
-      fileName: 'permutrueque.webp',
+      fileName: 'permutrueque-demo-v1.webp',
       tone: 'amber',
     },
   },

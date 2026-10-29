@@ -6,7 +6,7 @@
 - GuitArg: enlace configurado a `https://guitarg.xyz`.
 - OrangeStock (Gestión de Stock): demo compilada integrada en `public/orangestock/`, con captura y enlace `/orangestock/`.
 - BlackPadel: demo de la rama DEMO integrada en `public/blackpadel/`, con captura nueva y enlace `/blackpadel/`.
-- Permutrueque: ficha existente, demo pendiente.
+- PermuTrueque: demo integrada en `public/permutrueque/`, con captura real nueva y enlace `/permutrueque/`.
 - ArreglosYa e Invitaciones: retirados del listado por ahora; su contenido anterior queda en el historial de Git.
 
 ## Qué vamos a publicar
@@ -19,7 +19,7 @@ Todo HTML, CSS, JavaScript e imagen enviados al navegador se puede inspeccionar 
 
 ## Cómo pedir cada demo
 
-Abrí la IA dentro de la carpeta del proyecto original. Pegá el **prompt común** seguido del **bloque específico** de ese proyecto en el mismo mensaje. Empezá por Gestión de Stock; después repetí el proceso con BlackPadel y Permutrueque.
+Abrí la IA dentro de la carpeta del proyecto original. Pegá el **prompt común** seguido del **bloque específico** de ese proyecto en el mismo mensaje. Empezá por Gestión de Stock; después repetí el proceso con BlackPadel y PermuTrueque.
 
 ### Prompt común (copiar completo)
 
@@ -85,13 +85,13 @@ Recorrido deseado, sujeto a lo que exista en el proyecto:
 Generá turnos relativos a la fecha actual para que la demo no quede vacía con el paso del tiempo; manejá también datos guardados de días anteriores. Usá nombres inventados y no pidas teléfono, correo, pagos ni contacto con el club. Aclará que las reservas no son reales y que el estado no se comparte entre visitantes.
 ```
 
-### Bloque específico: Permutrueque
+### Bloque específico: PermuTrueque
 
 ```text
-Proyecto: Permutrueque.
-Ruta pública: /demos/permutrueque/.
-Prefijo de almacenamiento: portfolio-demo-permutrueque-v1.
-Captura: permutrueque.webp.
+Proyecto: PermuTrueque.
+Ruta pública: /permutrueque/.
+Prefijo de almacenamiento: permutrueque:demo:v1:.
+Captura: permutrueque-demo-v1.webp.
 
 Recorrido deseado, sujeto a lo que exista en el proyecto:
 - Explorar publicaciones ficticias, buscar y filtrar.
@@ -106,18 +106,18 @@ Usá alrededor de 12 publicaciones variadas con imágenes locales autorizadas y 
 
 ## Cómo integrar las entregas en este portfolio
 
-La opción elegida es publicar los builds dentro de este mismo portfolio, sin abrir los repositorios originales. OrangeStock ya está integrado localmente; BlackPadel también está integrado y Permutrueque sigue pendiente. OjoBache conserva su repositorio independiente `gali819/ojobache`: ambos formatos pueden convivir.
+La opción elegida es publicar los builds dentro de este mismo portfolio, sin abrir los repositorios originales. OrangeStock, BlackPadel y PermuTrueque ya están integrados localmente con sus capturas y enlaces. OjoBache conserva su repositorio independiente `gali819/ojobache`: ambos formatos pueden convivir.
 
 | Proyecto | Copiar el contenido de su dist en | URL resultante |
 | --- | --- | --- |
 | OrangeStock | `public/orangestock/` | `https://gali819.github.io/orangestock/` |
 | BlackPadel | `public/blackpadel/` | `https://gali819.github.io/blackpadel/` |
-| Permutrueque | `public/demos/permutrueque/` | `https://gali819.github.io/demos/permutrueque/` |
+| PermuTrueque | `public/permutrueque/` | `https://gali819.github.io/permutrueque/` |
 
 1. Pedí la primera demo con los bloques anteriores. Conservá el proyecto original privado; al portfolio copiá únicamente el resultado compilado revisado. No copies el historial Git del original.
 2. Traé la ubicación de `demo-publica/dist/` y su `DEMO-README.md` a este chat para revisar e integrar la entrega. La carpeta destino debe contener `index.html` directamente, no una carpeta `dist` adicional.
 3. Colocá las capturas en `public/projects/` con los nombres indicados. Revisá también la captura existente de BlackPadel antes de reutilizarla.
-4. OrangeStock ya tiene `liveUrl: '/orangestock/'`. Una vez que cada otra demo funcione localmente, agregá `liveUrl: '/blackpadel/'` o `liveUrl: '/demos/permutrueque/'` a su ficha en `src/data/projects.ts`. No agregues enlaces antes de tener sus archivos.
+4. Las tres fichas ya tienen enlaces públicos configurados. Al actualizar una demo, mantené su ruta base y reemplazá solo el build correspondiente.
 5. Ejecutá `npm run lint`, `npm run build` y `npm run preview`. Abrí cada ruta bajo la URL local que muestre Vite; probá acciones y recarga. Vite copia `public/` al build final.
 6. Revisá los archivos que vas a subir y hacé commit/push a `main` cuando esté listo para publicar. El workflow existente compila y publica `dist/` en GitHub Pages; comprobá que termine correctamente y verificá los enlaces públicos.
 
@@ -125,9 +125,9 @@ Como las demos comparten el origen de este portfolio y OjoBache, también compar
 
 ## Qué falta para cerrar esta parte del portfolio
 
-- Generar, revisar e integrar Permutrueque desde su proyecto original.
-- Agregar la captura de Permutrueque.
-- Activar y probar sus enlaces cuando existan los builds.
+- Las tres demos están integradas y verificadas localmente.
+- Las tres capturas están incorporadas.
+- Verificar los enlaces públicos después del despliegue.
 - Publicar los cambios y comprobar el resultado en GitHub Pages.
 
 Las demos permiten evaluar interfaz y recorridos. Para mostrar lógica privada del backend sin publicarla, se puede hacer una presentación guiada con pantalla compartida.

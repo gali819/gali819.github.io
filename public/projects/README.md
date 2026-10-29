@@ -8,7 +8,7 @@ El portfolio las detecta automaticamente si el archivo existe. Usa estos nombres
 
 - `stock-management-system.webp`
 - `blackpadel-demo-v2.webp`
-- `permutrueque.webp`
+- `permutrueque-demo-v1.webp`
 - `ojobache.webp`
 - `guitarg.webp`
 
