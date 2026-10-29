@@ -7,7 +7,7 @@ Pone las capturas reales de tus proyectos en esta carpeta:
 El portfolio las detecta automaticamente si el archivo existe. Usa estos nombres:
 
 - `stock-management-system.webp`
-- `blackpaddel.webp`
+- `blackpadel-demo-v2.webp`
 - `permutrueque.webp`
 - `ojobache.webp`
 - `guitarg.webp`

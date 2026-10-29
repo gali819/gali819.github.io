@@ -54,8 +54,8 @@ export const projects: Project[] = [
   {
     id: 'blackpaddel',
     title: {
-      en: 'BlackPaddel',
-      es: 'BlackPaddel',
+      en: 'BlackPadel',
+      es: 'BlackPadel',
     },
     category: {
       en: 'Booking Platform',
@@ -84,9 +84,10 @@ export const projects: Project[] = [
     technologies: ['Laravel', 'PHP', 'MySQL', 'JavaScript'],
     repository: 'private',
     prominence: 'standard',
+    liveUrl: 'https://gali819.github.io/blackpadel/',
     image: {
       src: '',
-      fileName: 'blackpaddel.webp',
+      fileName: 'blackpadel-demo-v2.webp',
       tone: 'green',
     },
   },
